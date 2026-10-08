@@ -1,1 +1,11 @@
+
+
+
+worker: python bot_uzgf.py
+aiogram>=3.0.0
+groq
 pip install aiogram google-genaipython bot.py
+python-telegram-bot
+requests
+aiogram
+groq
