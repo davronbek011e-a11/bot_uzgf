@@ -7,16 +7,30 @@ logging.basicConfig(level=logging.INFO)
 
 # Telegram BotFather'dan olingan YANGI TOKEN va Groq API kalitingiz:
 
-import os
 
 TOKEN = os.getenv("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")
 GROQ_API_KEY = os.getenv("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")
 
 
+
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 client = Groq(api_key=GROQ_API_KEY)
+import asyncio
+import logging
+import os
+from aiogram import Bot, Dispatcher, F, types
+from groq import Groq
 
+logging.basicConfig(level=logging.INFO)
+
+# Telegram BotFather'dan olingan TOKEN va Groq API kaliti:
+TOKEN = os.getenv("BOT_TOKEN")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
+bot = Bot(token=TOKEN)
+dp = Dispatcher()
+client = Groq(api_key=GROQ_API_KEY)
 # Toshkentlik, ravon va tushunarli muloqot uchun yo'riqnoma (System Prompt)
 BOT_UZGF_PROMPT = """
 Sening isming bot_uzgf. Sen Toshkentlik xushmuomala, madaniyatli va samimiy yigitsan.
