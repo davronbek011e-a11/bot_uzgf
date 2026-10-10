@@ -5,7 +5,8 @@ from groq import Groq
 
 logging.basicConfig(level=logging.INFO)
 
-# Telegram BotFather'dan olingan YANGI TOKEN va Groq API kalitingiz:
+
+
 
 
 TOKEN = os.getenv("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")
