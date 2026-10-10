@@ -1,3 +1,4 @@
+import os
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, F, types
@@ -6,13 +7,14 @@ from groq import Groq
 logging.basicConfig(level=logging.INFO)
 
 
-
+import os  
+from aiogram import Bot, Dispatcher, executor, types
 
 
 TOKEN = os.getenv("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")
 GROQ_API_KEY = os.getenv("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")
 
-
+# Botingizning qolgan kodi...
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
